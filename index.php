@@ -15,9 +15,6 @@
         <table>
             <tr>
                 <th>
-                    ID ROOM
-                </th>
-                <th>
                     ROOM NUMBER
                 </th>
             </tr>
@@ -34,11 +31,8 @@
             while ($stmt->fetch()) {
 
                 echo '<tr>
-                        <td>'
-                    . $id .
-                    '</td>  
                         <td>
-                            <a href="details_room.php">' . $room_num . '</a>
+                            <a href="details_room.php?id='.$id.'">' . $room_num . '</a>
                         </td>    
                         </tr>';
             }
